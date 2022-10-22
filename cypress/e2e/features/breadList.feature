@@ -1,7 +1,7 @@
 @stage
 Feature: Test the dogAPI fetch system
     As a dog enthusiast
-    I should be able to fetch dog pictures
+    I should be able to fetch pictures of dogs
     So that the website will continue to show cute dogs
 
     Scenario: TC_ID_001: Display random pictures functionality
