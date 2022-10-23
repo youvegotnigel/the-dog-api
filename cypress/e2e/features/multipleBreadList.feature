@@ -6,16 +6,17 @@ Feature: Test the dogAPI fetch system
 
     Background:
         Given I am on the dogAPI homepage
-        And I select "retriever-golden" from the dropdown
 
-    Scenario Outline: <test_case_id>: Display random pictures functionality
-
+    Scenario Outline: Display pictures of "<breed_name>" breeds functionality
+        Given I select "<breed>" from the dropdown
         When I click on the "Fetch!" link
         Then A random dog image should be loaded into the page
 
         Examples:
-            | test_case_id |
-            | TC_ID_002    |
-            | TC_ID_003    |
-            | TC_ID_004    |
-            | TC_ID_005    |
+            | breed            | breed_name       |
+            | retriever-golden | Golden Retriever |
+            | mountain-bernese | Bernese Mountain |
+            | husky            | Husky            |
+            | boxer            | Boxer            |
+            | buhund-norwegian | Norwegian Buhund |
+            | chihuahua        | Chihuahua        |
