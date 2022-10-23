@@ -28,5 +28,8 @@
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.37",
     "multiple-cucumber-html-reporter": "^2.0.0"
+  },
+  "dependencies": {
+    "playwright-webkit": "^1.27.1"
   }
 }

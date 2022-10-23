@@ -17,7 +17,9 @@ module.exports = defineConfig({
       await addCucumberPreprocessorPlugin(on, config);
       return config;
     },
-
+    
+    experimentalStudio: true,
+    experimentalWebKitSupport: true,
     viewportWidth: 1200,
     viewportHeight: 800,
     chromeWebSecurity: false,
