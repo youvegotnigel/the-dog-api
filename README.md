@@ -15,7 +15,7 @@ npx cypress run --help
 ```  
 
 ## Dependencies
-* cypress - v10.7
+* cypress - v10.10
 * multiple-cucumber-html-reporter - v1.21.4
 * cucumber-json-report-formatter - v0.0.9
 * cypress-xpath - v2.0.1
