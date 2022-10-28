@@ -20,3 +20,8 @@ Then("A random dog image should be loaded into the page", () => {
     breadListPage.verifyImageDisplayed()
 })
 
+Then("A random dog image should not be loaded into the page", () => {
+    cy.wait(2000)
+    breadListPage.verifyImageNotDisplayed()  
+})
+

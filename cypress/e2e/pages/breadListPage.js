@@ -20,11 +20,20 @@ export default class BreadListPage {
     }
 
     verifyImageDisplayed() {
-        this.elements.image().should('be.visible').should('be.visible')
+        this.elements.image().should('be.visible')
         .and(($img) => {
           // "naturalWidth" and "naturalHeight" are set when the image loads
           expect($img[0].naturalHeight).to.be.greaterThan(0)
           expect($img[0].naturalWidth).to.be.greaterThan(0)
+        })
+    }
+
+    verifyImageNotDisplayed() {
+        this.elements.image().should('be.visible')
+        .and(($img) => {
+          // "naturalWidth" and "naturalHeight" are set when the image loads
+          expect($img[0].naturalHeight).to.be.equal(0)
+          expect($img[0].naturalWidth).to.be.equal(0)
         })
     }
 
