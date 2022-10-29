@@ -33,10 +33,9 @@ jobs:
     - run: npm run build --if-present
     - run: npm run cy:run
 
-    - name: Test Report
-      uses: dorny/test-reporter@v1
+    - name: Upload Report
+      uses: actions/upload-artifact@v2
       if: success() || failure()
       with:
-          name: Test Results        
-          path: ${{ github.workspace }}/reports/cucumber-report.json
-          reporter: 'mocha-json'
+          name: Cypress Cucumber Report        
+          path: ${{ github.workspace }}/reports/cucumber-report.html
