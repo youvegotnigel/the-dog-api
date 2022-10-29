@@ -6,7 +6,7 @@ This project is created to show how we can leverage Cucumber BDD framework in Cy
 * IDE - [VS Code](https://code.visualstudio.com/download) 
 
 ## Set Up
-* Clone repository from [Bitbucket](https://bitbucket.org/vitalhub/s12-qa-automation/src/master/)
+* Clone repository
 * Run ```npm i``` to  install all dependencies.  
 
 ## Cypress Help
