@@ -33,9 +33,9 @@ jobs:
     - run: npm run build --if-present
     - run: npm run cy:run
 
-    - name: Upload Report
-      uses: actions/upload-artifact@v2
+    - name: Generate Report
+      uses: deblockt/cucumber-report-annotations-action@v1.7
       if: success() || failure()
       with:
           name: Cypress Cucumber Report        
-          path: ${{ github.workspace }}/reports/cucumber-report.html
+          path: ${{ github.workspace }}/reports/cucumber-report.json
