@@ -38,5 +38,5 @@ jobs:
       if: success() || failure()
       with:
           name: Test Results        
-          path: ${{ github.workspace }}/reports/test-results.json
+          path: ${{ github.workspace }}/reports/cucumber-report.json
           reporter: 'mocha-json'
